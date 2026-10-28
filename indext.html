@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AP Mock 1 Biology: Interactive Worksheet</title>
+<style>
+:root{--bg:#f4f1ea;--card:#fffdf8;--ink:#1b2a41;--mut:#5d6675;--acc:#1d4ed8;--red:#c1121f;--ok:#1a7f4b;--line:#d8d2c4;--soft:#eef2fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#12161d;--card:#1a2029;--ink:#e6ebf3;--mut:#9aa6b8;--acc:#7aa2ff;--red:#ff6b73;--ok:#4cc38a;--line:#2e3744;--soft:#1d2a44}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#12161d;--card:#1a2029;--ink:#e6ebf3;--mut:#9aa6b8;--acc:#7aa2ff;--red:#ff6b73;--ok:#4cc38a;--line:#2e3744;--soft:#1d2a44}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Charter","Iowan Old Style",Georgia,serif}
+main{max-width:860px;margin:auto;padding:16px}
+.ui,button,label.l,.badge,th{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.head{border-bottom:3px double var(--ink);padding-bottom:10px;margin-bottom:14px}
+h1{font-size:1.7rem;margin:0}h1 small{display:block;font-size:.85rem;color:var(--mut);font-weight:400;letter-spacing:.04em;text-transform:uppercase}
+h2{font-size:1.25rem;margin:1.6em 0 .4em;border-bottom:1px solid var(--line)}h3{margin:.2em 0}
+.meta{display:flex;gap:6px 18px;flex-wrap:wrap;color:var(--mut);font-size:.9rem;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:12px 0}
+label.l{font-size:.78rem;color:var(--mut);display:block}
+input[type=text],input[type=number],textarea{width:100%;font:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+textarea{min-height:92px;resize:vertical}input:disabled,textarea:disabled{opacity:.85}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0}
+.tmr{display:flex;gap:10px;align-items:center;font:600 1.1rem system-ui;font-variant-numeric:tabular-nums}.tmr.low{color:var(--red)}
+button{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:9px;padding:8px 14px;font-size:.95rem}
+.btn{background:var(--acc);border-color:var(--acc);color:#fff}.btn.big{padding:12px 22px;font-size:1.05rem}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;min-width:420px;font-size:.88rem;margin:auto}th,td{border:1px solid var(--line);padding:6px 9px;text-align:center}th{background:var(--soft)}
+caption{font:600 .9rem system-ui;padding:6px}
+.part{margin:16px 0}.mk{float:right;font:.8rem system-ui;color:var(--mut);margin-left:10px}
+.key{border-left:4px solid var(--red);background:color-mix(in srgb,var(--red) 7%,var(--card));padding:8px 12px;margin-top:8px;border-radius:0 8px 8px 0;font-size:.95rem}
+.key b.k{color:var(--red);font-family:system-ui;font-size:.78rem;letter-spacing:.05em}
+.badge{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;margin:4px 6px 0 0;border:1px solid}.badge.y{color:var(--ok);border-color:var(--ok)}.badge.n{color:var(--red);border-color:var(--red)}
+.sm{width:5em!important;display:inline-block}
+.gsvg{width:100%;max-width:520px;display:block;margin:8px auto;background:var(--card);border:1px solid var(--line);border-radius:8px;touch-action:manipulation}
+.gl{stroke:var(--line)}.ax{stroke:var(--ink);stroke-width:1.5}.pt{fill:var(--acc)}.ln{stroke:var(--acc);fill:none;stroke-width:2}.gsvg text{fill:var(--ink);font:10px system-ui}
+details{margin:8px 0}summary{cursor:pointer;font-family:system-ui;font-weight:600}
+.fs{font:.82rem/1.5 system-ui;columns:2 260px}.fs p{margin:0 0 6px;break-inside:avoid}
+.code td{font-size:.68rem;text-align:left;vertical-align:top;white-space:nowrap}
+.st{font:.9rem system-ui;color:var(--mut);margin:8px 0}
+</style></head><body><main>
+<div class="head"><h1><small>Applied Technology Schools · AY2627</small>AP Mock 1 Exam · Biology</h1>
+<div class="meta"><span>Date 07-10-2026</span><span>Grade 12 | ASP</span><span>Duration 25 minutes</span><span>Section II · 60 marks</span></div></div>
+<div class="grid"><div><label class="l">Student name</label><input type="text" data-k="name" autocomplete="name"></div><div><label class="l">Student #</label><input type="text" data-k="sid"></div><div><label class="l">Section</label><input type="text" data-k="sec"></div></div>
+<div class="box ui"><div class="tmr"><span id="tm">⏱ 25:00</span><button id="tb">▶ Start 25-min timer</button></div>
+<p style="margin:.6em 0 0;font-size:.9rem"><b>Instructions.</b> Answer all questions. Show ALL steps in your working, and include units and correct significant figures. A scientific calculator is allowed. When you press <b>Submit</b>, your answers are sent to your teacher and the marking guide is revealed.</p></div>
+<details class="box"><summary>AP® Biology Equations and Formulas</summary><div class="fs">
+<p><b>Mean</b> x̄ = (1/n) Σxᵢ</p><p><b>Standard deviation</b> s = √[Σ(xᵢ − x̄)² / (n − 1)]</p><p><b>Standard error of the mean</b> SE = s/√n</p><p><b>Chi-square</b> χ² = Σ (o − e)²/e. Degrees of freedom = distinct possible outcomes − 1. Critical values (p = 0.05 / 0.01) for df 1–8: 3.84/6.63, 5.99/9.21, 7.81/11.34, 9.49/13.28, 11.07/15.09, 12.59/16.81, 14.07/18.48, 15.51/20.09</p>
+<p><b>Probability</b> Mutually exclusive: P(A or B) = P(A) + P(B). Independent: P(A and B) = P(A) × P(B)</p><p><b>Hardy-Weinberg</b> p² + 2pq + q² = 1; p + q = 1</p>
+<p><b>Rate</b> dY/dt · <b>Population growth</b> dN/dt = B − D · <b>Exponential</b> dN/dt = r<sub>max</sub>N · <b>Logistic</b> dN/dt = r<sub>max</sub>N(K − N)/K</p><p><b>Simpson’s diversity</b> 1 − Σ(n/N)²</p>
+<p><b>Water potential</b> Ψ = Ψ<sub>P</sub> + Ψ<sub>S</sub>; Ψ<sub>S</sub> = −iCRT (R = 0.0831 L·bar/mol·K; T = °C + 273); <b>pH</b> = −log[H⁺]</p>
+<p><b>Surface area / volume</b> Sphere SA = 4πr², V = (4/3)πr³ · Rectangular solid SA = 2lh + 2lw + 2wh, V = lwh · Cylinder SA = 2πrh + 2πr², V = πr²h · Cube SA = 6s², V = s³</p>
+<p><b>Metric prefixes</b> giga G 10⁹ · mega M 10⁶ · kilo k 10³ · deci d 10⁻¹ · centi c 10⁻² · milli m 10⁻³ · micro μ 10⁻⁶ · nano n 10⁻⁹ · pico p 10⁻¹²</p>
+<p>Mode = most frequent value · Median = middle value · Mean = sum ÷ number of data points · Range = maximum − minimum</p></div></details>
+
+<h2>Section II: Free Response Questions</h2>
+<h3>13. [30 marks]</h3>
+<p>Tirzepatide (commercially known as Mounjaro) is a peptide-based medication used to treat type 2 diabetes. Tirzepatide binds to GIP receptors and GLP-1 receptors, which are G protein-coupled receptors (GPCRs) located in the plasma membrane of pancreatic β cells. Activation of either receptor can stimulate adenylyl cyclase, resulting in increased intracellular cyclic AMP (cAMP). Increased cAMP activates downstream proteins that contribute to insulin secretion. Researchers investigated the effect of tirzepatide on cultured pancreatic β cells. Equal numbers of genetically identical β cells were placed into four treatment groups. All groups were maintained at the same glucose concentration for 30 minutes. The researchers then measured intracellular cAMP concentration and the amount of insulin released into the culture medium. The data are shown in Table 1 below. Use the table and your knowledge to answer questions a–e.</p>
+<div class="tw"><table><caption>Table 1. Effect of Tirzepatide on β-Cell Signaling and Insulin Secretion</caption><tr><th>Treatment</th><th>Tirzepatide (nM)</th><th>Mean cAMP (pmol/10⁶ cells)</th><th>Mean Insulin Released (ng/mL)</th></tr><tr><td>Control</td><td>0</td><td>2.1 ± 0.2</td><td>3.2 ± 0.3</td></tr><tr><td>Low</td><td>1</td><td>4.8 ± 0.4</td><td>5.9 ± 0.5</td></tr><tr><td>Medium</td><td>10</td><td>8.2 ± 0.6</td><td>9.7 ± 0.7</td></tr><tr><td>High</td><td>100</td><td>9.1 ± 0.5</td><td>10.4 ± 0.8</td></tr></table></div>
+
+<div class="part"><span class="mk">6 marks</span><b>a.</b> Describe the relationship between tirzepatide concentration and intracellular cAMP concentration shown in Table 1.<textarea data-k="13a"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>Increasing tirzepatide concentration increases intracellular cAMP. cAMP increases from 2.1 pmol/10⁶ cells in the control to 9.1 pmol/10⁶ cells at 100 nM tirzepatide (4 marks). However, the increase becomes smaller between 10 and 100 nM, suggesting that the response approaches a maximum (2 marks).</div></div>
+
+<div class="part"><span class="mk">6 marks</span><b>b.</b> Calculate the percent increase in insulin secretion in cells treated with 10 nM tirzepatide compared with the control cells. Show your work.
+<label class="l" style="margin-top:6px">Working</label><textarea data-k="13b-work" style="min-height:70px"></textarea>
+<label class="l" style="margin-top:6px">Final answer (with units)</label><input type="text" data-k="13b-ans"><span class="badge" id="a-13b" hidden></span>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>[(9.7 − 3.2)/3.2] × 100 = 203.1% (accept a value ± 3.0) (2 marks for the work and 4 marks for the answer). Treatment with 10 nM tirzepatide resulted in approximately a 203% increase in insulin secretion compared with the control.</div></div>
+
+<div class="part"><span class="mk">6 marks</span><b>c.</b> Based on the data, make a claim about the relationship between intracellular cAMP concentration and insulin secretion. Support your claim using evidence from Table 1.<textarea data-k="13c"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>• The data support the claim that increased intracellular cAMP is associated with increased insulin secretion (3 marks).<br>• For example, cAMP increased from 2.1 to 8.2 pmol/10⁶ cells between the control and 10 nM treatment, while insulin secretion increased from 3.2 to 9.7 ng/mL. Therefore, activation of the signaling pathway that increases cAMP is associated with increased insulin release (3 marks).</div></div>
+
+<div class="part"><span class="mk">6 marks</span><b>d.</b> A researcher repeats the experiment using β cells containing a mutation that prevents activation of adenylyl cyclase. Predict the cAMP concentration and insulin secretion of the mutant cells after treatment with 100 nM tirzepatide compared with normal cells treated with 100 nM tirzepatide. Justify your prediction in terms of signal transduction.<textarea data-k="13d"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>• The mutant cells would have lower cAMP concentrations and reduced insulin secretion compared with normal cells treated with 100 nM tirzepatide (3 marks).<br>• Tirzepatide may still bind to its membrane receptors, but if adenylyl cyclase cannot be activated, the receptor signal cannot produce the normal increase in cAMP. Consequently, downstream cAMP-dependent signaling will be reduced, resulting in less stimulation of insulin secretion (3 marks).</div></div>
+
+<div class="part"><span class="mk">6 marks</span><b>e.</b> Patients with type 2 diabetes generally retain at least some functional pancreatic β cells, whereas type 1 diabetes results from autoimmune destruction of β cells. Explain why activation of GIP and GLP-1 receptors by tirzepatide can improve glucose regulation in many patients with type 2 diabetes but cannot replace insulin therapy in patients with type 1 diabetes.<textarea data-k="13e"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>In type 2 diabetes, functional β cells remain capable of producing insulin. Tirzepatide can therefore activate receptors on those β cells and enhance glucose-dependent insulin secretion (3 marks). In type 1 diabetes, autoimmune destruction greatly reduces the number of functional β cells. Consequently, activating GIP and GLP-1 receptors cannot generate sufficient endogenous insulin when the insulin-producing cells themselves are absent. Exogenous insulin is therefore still required (3 marks).</div></div>
+
+<h3 style="margin-top:2em">14. [30 marks]</h3>
+<p>Researchers investigate DNA replication and protein synthesis in cultured eukaryotic cells. They expose separate groups of cells to different concentrations of Compound X, which interferes with the activity of DNA polymerase. After 30 minutes, the researchers measure the amount of newly synthesized DNA in each group (Table 2). The researchers also study the expression of a gene called GENE1 in untreated cells. A short section of the DNA strand of GENE1 is shown below (Table 3). The genetic code chart is provided in Table 4. Use the three tables and your knowledge to answer questions a–d.</p>
+<div class="tw"><table><caption>Table 2. Effect of Compound X on DNA Synthesis</caption><tr><th>Compound X Concentration (µM)</th><th>Newly Synthesized DNA (% of control)</th></tr><tr><td>0</td><td>100</td></tr><tr><td>2</td><td>91</td></tr><tr><td>4</td><td>76</td></tr><tr><td>6</td><td>57</td></tr><tr><td>8</td><td>39</td></tr><tr><td>10</td><td>25</td></tr></table></div>
+<div class="tw"><table><caption>Table 3. A Short Section of the DNA Strand of GENE1</caption><tr><th>Coding DNA strand</th><td>5′–ATG GGC TTT CCA TGA–3′</td></tr><tr><th>Template DNA strand</th><td>3′–TAC CCG AAA GGT ACT–5′</td></tr></table></div>
+<details class="box" open><summary>Table 4. Genetic Code Chart</summary><div class="tw"><table class="code" id="gc"></table></div></details>
+
+<div class="part"><span class="mk">10 marks</span><b>a.</b> Using the data in Table 2, <b>construct</b> an appropriately labeled graph showing the relationship between Compound X concentration and newly synthesized DNA.
+<div class="box ui"><div class="grid"><div><label class="l">X-axis: units per grid square</label><input type="number" min="0" step="any" data-g="xs"></div><div><label class="l">Y-axis: units per grid square</label><input type="number" min="0" step="any" data-g="ys"></div><div><label class="l">X-axis title (with units)</label><input type="text" data-g="xl"></div><div><label class="l">Y-axis title (with units)</label><input type="text" data-g="yl"></div></div>
+<p class="st" id="gm">Set both scales, then tap a grid intersection to plot a point. Tap a point again to remove it.</p>
+<svg class="gsvg" id="gs" viewBox="0 0 460 340" role="img" aria-label="Graph grid"></svg>
+<label class="l"><input type="checkbox" data-g="join"> Join points with straight lines (point to point)</label> <button id="gc2" style="margin-top:6px">Clear points</button> <span class="badge" id="a-14a" hidden></span></div>
+<div class="key" hidden><b class="k">MARKING GUIDE · MODEL GRAPH</b><svg class="gsvg" id="ks" viewBox="0 0 460 340"></svg>The response must include all of the following criteria:<br>• Properly scaled X axis (2 marks)<br>• Properly scaled Y axis (2 marks)<br>• Points plotted correctly (3 marks, 0.5 each)<br>• The line graph is drawn point to point (3 marks)</div></div>
+
+<div class="part"><span class="mk">4 marks</span><b>b.</b> Based on the function of DNA polymerase and the data in Table 2, explain why increasing concentrations of Compound X result in the observed change in the amount of newly synthesized DNA.<textarea data-k="14b"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>• DNA polymerase catalyzes the addition of nucleotides to the 3′ end of a growing DNA strand during DNA replication (2 marks).<br>• Because Compound X reduces DNA polymerase activity, increasing concentrations of Compound X decrease the rate at which nucleotides are added to newly synthesized DNA strands (2 marks).</div></div>
+
+<div class="part"><span class="mk">7 marks</span><b>c.</b> Using the DNA sequences in Table 3, determine the sequence and directionality of the mRNA transcribed from this region of GENE1. Explain how complementary base pairing and strand directionality result in the mRNA sequence.
+<label class="l" style="margin-top:6px">mRNA sequence (label 5′ and 3′ ends)</label><input type="text" data-k="14c-mrna" placeholder="5′–…–3′"><span class="badge" id="a-14c" hidden></span>
+<label class="l" style="margin-top:6px">Explanation</label><textarea data-k="14c"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>• The DNA template strand is 3′–TAC CCG AAA GGT ACT–5′, therefore the mRNA sequence is 5′–AUG GGC UUU CCA UGA–3′ (5 marks; 1 for each codon. Do not award partial marks if one base is incorrect in any given codon).<br>• During transcription, RNA polymerase uses the DNA template strand to synthesize a complementary RNA molecule. RNA polymerase reads the DNA template in the 3′ → 5′ direction while synthesizing the RNA in the 5′ → 3′ direction (1 mark).<br>• Complementary base pairing determines the RNA sequence, with A pairing with U, T with A, C with G, and G with C (1 mark).</div></div>
+
+<div class="part"><span class="mk">9 marks</span><b>d.</b> Using your answer from part (c) and the genetic code chart in Table 4, determine the amino acid sequence produced during translation. Explain how interactions between mRNA, tRNA, and the ribosome result in the specified amino acid sequence.
+<label class="l" style="margin-top:6px">Amino acid sequence</label><input type="text" data-k="14d-seq" placeholder="e.g. Xxx–Xxx–Xxx"><span class="badge" id="a-14d" hidden></span>
+<label class="l" style="margin-top:6px">Explanation</label><textarea data-k="14d"></textarea>
+<div class="key" hidden><b class="k">MARKING GUIDE</b><br>• The amino acid sequence is Met–Gly–Phe–Pro (4 marks; 1 for each codon. If the student adds the term STOP to the end of the sequence, deduct 1 mark).<br>• During translation, the ribosome moves along the mRNA and reads its codons (1 mark). tRNA molecules with complementary anticodons bind to the appropriate mRNA codons (1 mark), and each tRNA carries the amino acid corresponding to that codon (1 mark). The ribosome catalyzes peptide-bond formation between the amino acids (1 mark), producing the polypeptide in the order specified by the mRNA. When the ribosome reaches the UGA stop codon, translation terminates (1 mark).</div></div>
+
+<div class="box ui" id="sub"><button class="btn big" id="sb">Submit answers</button><div class="st" id="ss"></div>
+<div id="after" hidden><b>Self-mark (optional):</b> <label class="l" style="display:inline">total /60 <input type="number" class="sm" min="0" max="60" id="tot"></label> <button id="cp">Copy my answers</button> <button id="dl">Download my answers</button></div></div>
+
+<section class="box ui" id="teach" hidden><h3>Teacher dashboard</h3><p class="st">Visible only to people who can edit this page. Student answers appear here after they submit.</p><button id="rf">Refresh</button> <button id="ex">Export CSV</button><div id="tl" class="tw"></div></section>
+</main>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* genetic code */
+const AA='FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG',NM={F:'Phenylalanine',L:'Leucine',S:'Serine',Y:'Tyrosine','*':'STOP',C:'Cysteine',W:'Tryptophan',P:'Proline',H:'Histidine',Q:'Glutamine',R:'Arginine',I:'Isoleucine',M:'Methionine',T:'Threonine',N:'Asparagine',K:'Lysine',V:'Valine',A:'Alanine',D:'Aspartic Acid',E:'Glutamic Acid',G:'Glycine'},B='UCAG';
+$('#gc').innerHTML='<tr><th>First</th>'+[...B].map(b=>'<th>Second base: '+b+'</th>').join('')+'<th>Third</th></tr>'+[...B].map((a,i)=>'<tr><th>'+a+'</th>'+[...B].map((b,j)=>'<td>'+[...B].map((c,k)=>'<b>'+a+b+c+'</b> '+NM[AA[i*16+j*4+k]]).join('<br>')+'</td>').join('')+'<td>U<br>C<br>A<br>G</td></tr>').join('');
+/* graph */
+const DATA=[[0,100],[2,91],[4,76],[6,57],[8,39],[10,25]],G={xs:'',ys:'',xl:'',yl:'',pts:[],join:false};let locked=false;
+function draw(svg,xs,ys,pts,join,xl,yl){let s='';for(let c=0;c<=10;c++)s+='<line class="gl" x1="'+(60+c*38)+'" y1="20" x2="'+(60+c*38)+'" y2="300"/>';for(let r=0;r<=10;r++)s+='<line class="gl" x1="60" y1="'+(300-r*28)+'" x2="440" y2="'+(300-r*28)+'"/>';
+s+='<line class="ax" x1="60" y1="300" x2="448" y2="300"/><line class="ax" x1="60" y1="300" x2="60" y2="12"/>';
+if(+xs>0)for(let c=0;c<=10;c++)s+='<text x="'+(60+c*38)+'" y="314" text-anchor="middle">'+ +(c*xs).toPrecision(6)+'</text>';
+if(+ys>0)for(let r=0;r<=10;r++)s+='<text x="54" y="'+(303-r*28)+'" text-anchor="end">'+ +(r*ys).toPrecision(6)+'</text>';
+s+='<text x="250" y="335" text-anchor="middle">'+esc(xl||'')+'</text><text transform="translate(12 160) rotate(-90)" text-anchor="middle">'+esc(yl||'')+'</text>';
+const P=[...pts].sort((a,b)=>a.c-b.c).map(p=>[60+p.c*38,300-p.r*28]);
+if(join&&P.length>1)s+='<polyline class="ln" points="'+P.map(p=>p.join(',')).join(' ')+'"/>';
+P.forEach(p=>s+='<circle class="pt" cx="'+p[0]+'" cy="'+p[1]+'" r="4.5"/>');svg.innerHTML=s}
+const gs=$('#gs'),redraw=()=>draw(gs,G.xs,G.ys,G.pts,G.join,G.xl,G.yl);redraw();
+gs.onclick=e=>{if(locked)return;const m=$('#gm');if(!(+G.xs>0&&+G.ys>0)){m.textContent='Set a scale for both axes first.';return}const r=gs.getBoundingClientRect(),x=(e.clientX-r.left)*460/r.width,y=(e.clientY-r.top)*340/r.height,c=Math.round((x-60)/38),w=Math.round((300-y)/28);if(c<0||c>10||w<0||w>10)return;const i=G.pts.findIndex(p=>p.c===c&&p.r===w);i>=0?G.pts.splice(i,1):G.pts.push({c,r:w});m.textContent=G.pts.length+' point(s) plotted.';redraw();save()};
+$$('[data-g]').forEach(i=>i.oninput=()=>{G[i.dataset.g]=i.type==='checkbox'?i.checked:i.value;redraw();save()});
+$('#gc2').onclick=()=>{if(!locked){G.pts=[];redraw();save()}};
+draw($('#ks'),1,10,DATA.map(d=>({c:d[0],r:d[1]/10})),true,'Compound X Concentration (µM)','Newly Synthesized DNA (% of control)');
+/* draft */
+const LK='apmock1-bio-draft',vals=()=>Object.fromEntries($$('[data-k]').map(i=>[i.dataset.k,i.value]));
+function save(){try{localStorage.setItem(LK,JSON.stringify({f:vals(),g:G}))}catch(e){}}
+try{const d=JSON.parse(localStorage.getItem(LK)||'null');if(d){$$('[data-k]').forEach(i=>{if(d.f[i.dataset.k]!=null)i.value=d.f[i.dataset.k]});Object.assign(G,d.g);$$('[data-g]').forEach(i=>{const v=G[i.dataset.g];i.type==='checkbox'?i.checked=!!v:i.value=v});redraw()}}catch(e){}
+$$('[data-k]').forEach(i=>i.addEventListener('input',save));
+/* timer */
+let T=1500,iv=null;const tm=$('#tm'),tb=$('#tb');
+const dt=()=>{tm.textContent='⏱ '+String(T/60|0).padStart(2,'0')+':'+String(T%60).padStart(2,'0')+(T<=0?' · Time’s up!':'');tm.parentNode.classList.toggle('low',T<=60)};
+tb.onclick=()=>{if(iv){clearInterval(iv);iv=null;tb.textContent='▶ Resume'}else if(T>0&&!locked){tb.textContent='⏸ Pause';iv=setInterval(()=>{T--;dt();if(T<=0){clearInterval(iv);iv=null;submit(true)}},1000)}};
+/* submit */
+let db=null,me=null,armed=false;
+const sb=$('#sb'),ss=$('#ss'),A={};
+const badge=(id,ok,t)=>{const b=$('#a-'+id);b.hidden=false;b.className='badge '+(ok?'y':'n');b.textContent=(ok?'✓ ':'✗ ')+t};
+function check(){const v=vals();
+const n=parseFloat(String(v['13b-ans']).replace(/[^0-9.\-]/g,''));A.b13=Math.abs(n-203.1)<=3;badge('13b',A.b13,A.b13?'Matches the key (203.1 ± 3.0)':'Does not match 203.1 ± 3.0');
+const m=v['14c-mrna'].toUpperCase().replace(/[^ACGU]/g,'');A.c14=m==='AUGGGCUUUCCAUGA';badge('14c',A.c14,A.c14?'Sequence matches':'Sequence differs from key');
+let q=v['14d-seq'].toLowerCase().replace(/[^a-z]/g,'');const st=q.endsWith('stop');q=q.replace(/stop$/,'');A.d14=['metglyphepro','methionineglycinephenylalanineproline','mgfp'].includes(q);badge('14d',A.d14,A.d14?'Sequence matches'+(st?' (but “STOP” is not an amino acid: −1)':''):'Sequence differs from key');
+let k=0;DATA.forEach(d=>{if(G.pts.some(p=>Math.abs(p.c*G.xs-d[0])<=.5*G.xs&&Math.abs(p.r*G.ys-d[1])<=.6*G.ys))k++});A.g14=k;badge('14a',k===6,k+' / 6 points match the data')}
+const text=()=>{const v=vals();return 'AP Mock 1 Biology: '+v.name+' | '+v.sid+' | '+v.sec+'\n'+Object.entries(v).filter(([k])=>!/^(name|sid|sec)$/.test(k)).map(([k,x])=>'['+k+'] '+x).join('\n')+'\n[14a graph] x: '+G.xl+' ('+G.xs+'/sq), y: '+G.yl+' ('+G.ys+'/sq), points: '+G.pts.map(p=>'('+p.c*G.xs+', '+p.r*G.ys+')').join(' ')+(G.join?' joined':' not joined')};
+async function submit(force){if(locked)return;if(!force&&!armed){armed=true;sb.textContent='Tap again to confirm: you can’t change answers after this';setTimeout(()=>{armed=false;if(!locked)sb.textContent='Submit answers'},4000);return}
+locked=true;clearInterval(iv);$$('[data-k],[data-g]').forEach(i=>i.disabled=true);$('#gc2').disabled=true;tb.disabled=true;sb.disabled=true;sb.textContent='Submitted ✓';
+check();$$('.key').forEach(k=>k.hidden=false);$('#after').hidden=false;try{localStorage.removeItem(LK)}catch(e){}
+const v=vals(),pay={name:v.name,sid:v.sid,sec:v.sec,at:new Date().toISOString(),uid:me&&me.id||null,ans:Object.fromEntries(Object.entries(v).filter(([k])=>!/^(name|sid|sec)$/.test(k))),graph:{...G,pts:G.pts.map(p=>({x:p.c*G.xs,y:p.r*G.ys}))},auto:A};
+ss.textContent='Saving to your teacher…';
+try{if(!db||!me||!me.id)throw 0;await db.doc('responses/'+me.id).set(pay);ss.textContent='✓ Sent to your teacher. The marking guide is now shown below each question.'}catch(e){ss.textContent='Your answers could not be sent automatically. Use Copy or Download below and give them to your teacher. The marking guide is shown below each question.'}
+$('#ks').closest('.key').scrollIntoView({block:'center'})}
+sb.onclick=()=>submit();
+$('#cp').onclick=e=>{navigator.clipboard&&navigator.clipboard.writeText(text()).then(()=>e.target.textContent='Copied ✓',()=>{})};
+$('#dl').onclick=async()=>{try{const d=await claude.use('downloads');await d.save({filename:'ap-mock1-biology-answers.txt',data:new Blob([text()],{type:'text/plain'})})}catch(e){ss.textContent='Download unavailable here: use Copy instead.'}};
+/* teacher */
+let rows=[];
+async function load(){const el=$('#tl');el.textContent='Loading…';try{const s=await db.collection('responses').get();rows=s.docs.map(d=>d.data()).sort((a,b)=>String(a.name).localeCompare(b.name));
+el.innerHTML=rows.length?'<table><tr><th>Student</th><th>#</th><th>Section</th><th>Submitted</th><th>13b</th><th>14a pts</th><th>14c</th><th>14d</th></tr>'+rows.map((r,i)=>'<tr><td><details><summary>'+esc(r.name||'(no name)')+'</summary><div style="text-align:left;white-space:pre-wrap;font-size:.8rem">'+esc(Object.entries(r.ans||{}).map(([k,x])=>'['+k+'] '+x).join('\n')+'\n[14a graph] '+JSON.stringify(r.graph))+'</div></details></td><td>'+esc(r.sid||'')+'</td><td>'+esc(r.sec||'')+'</td><td>'+esc((r.at||'').slice(0,16).replace('T',' '))+'</td><td>'+(r.auto.b13?'✓':'✗')+'</td><td>'+r.auto.g14+'/6</td><td>'+(r.auto.c14?'✓':'✗')+'</td><td>'+(r.auto.d14?'✓':'✗')+'</td></tr>').join('')+'</table>':'No submissions yet.'}catch(e){el.textContent='Could not load responses.'}}
+$('#rf').onclick=load;
+$('#ex').onclick=async()=>{const ks=[...new Set(rows.flatMap(r=>Object.keys(r.ans||{})))],q=x=>'"'+String(x==null?'':x).replace(/"/g,'""')+'"',csv=[['name','student#','section','submitted','graph','13b ok','14c ok','14d ok','14a pts',...ks].map(q).join(',')].concat(rows.map(r=>[r.name,r.sid,r.sec,r.at,JSON.stringify(r.graph),r.auto.b13,r.auto.c14,r.auto.d14,r.auto.g14,...ks.map(k=>(r.ans||{})[k])].map(q).join(','))).join('\n');try{const d=await claude.use('downloads');await d.save({filename:'ap-mock1-biology-responses.csv',data:new Blob([csv],{type:'text/csv'})})}catch(e){$('#tl').prepend('Download unavailable here.')}};
+/* runtime */
+(async()=>{if(typeof claude==='undefined')return;try{db=await claude.use('db');const u=await claude.use('user');if(u){me=await u.me();const n=$('[data-k="name"]');if(me.name&&!n.value)n.value=me.name;if(await u.canEdit()){$('#teach').hidden=false;if(db)load()}}}catch(e){}})();
+dt();
+</script></body></html>
